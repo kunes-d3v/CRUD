@@ -47,6 +47,8 @@ namespace Server
             #endregion
         }
 
+
+
         #region product OPS
         public int Add(Product product)
         {
@@ -64,6 +66,7 @@ namespace Server
             }
             return 0;
         }
+       
         public int Delete(Product product)
         {
             // PS: there is some exceptions to catch ie: null,  ...
@@ -80,6 +83,7 @@ namespace Server
             }
             return 0;
         }
+        
         public int Update(int productID, Product newProduct)
         {
             // PS: there is some exceptions to catch ie: null,  ...
@@ -117,11 +121,14 @@ namespace Server
             }
             return 0;
         }
+        
         public List<Product> GetAllProducts()
         {
             return stockDB.products.ToList<Product>();
         }
         #endregion
+
+
 
         #region category OPS
         public int Add(ProductCategory category)
@@ -188,9 +195,8 @@ namespace Server
 
         public List<ProductCategory> GetAllProductsCategories()
         {
-            return stockDB.productscategories.ToList();
+            return stockDB.productscategories.ToList<ProductCategory>();
         }
-
         #endregion
     }
 }

@@ -78,7 +78,7 @@ namespace InterfaceServ
         /// </summary>
         /// <returns>List of all availble products.</returns>
         [OperationContract]
-        List<Product> GetAllProductsCategories();
+        List<ProductCategory> GetAllProductsCategories();
         #endregion
 
 
