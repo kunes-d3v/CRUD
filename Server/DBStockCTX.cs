@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InterfaceServ;
+using System.Diagnostics;
 
 namespace Server
 {
@@ -16,10 +17,8 @@ namespace Server
     class DBStockCTX : DbContext
     {
         
-        public DBStockCTX() : base("server = localhost; User Id = root; Persist Security Info=True; database=ProductDB; password=moh123") // use the connection string
+        public DBStockCTX() : base("server = localhost; User Id = root; Persist Security Info=True; database=StockDB; password=moh123") // use the connection string
         {
-            // create DB if does not exists
-            this.Database.CreateIfNotExists();
         }
 
         // set the table sets properties

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceServ
 {
+    [Table("products")]
     public class Product
     {
         [Key]
@@ -22,7 +23,7 @@ namespace InterfaceServ
         [Required]
         public decimal price { get; set; }
 
-        [ForeignKey("category")]
+        //[ForeignKey("productscategories")]
         public virtual ProductCategory category { get; set; }
     }
 }

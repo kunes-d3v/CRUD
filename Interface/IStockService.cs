@@ -19,7 +19,7 @@ namespace InterfaceServ
         /// <param name="category">The new product to add.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Add(Product product);
+        int AddProduct(Product product);
 
         /// <summary>
         /// Delete a product
@@ -27,7 +27,7 @@ namespace InterfaceServ
         /// <param name="product">The target product to delete.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Delete(Product product);
+        int DeleteProduct(Product product);
 
         /// <summary>
         /// Update a specific product.
@@ -36,7 +36,7 @@ namespace InterfaceServ
         /// <param name="newProduct">The new product to update with.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Update(int productID, Product newProduct);
+        int UpdateProduct(int productID, Product newProduct);
 
         /// <summary>
         /// Get all products.
@@ -54,7 +54,7 @@ namespace InterfaceServ
         /// <param name="category">The new product category to add.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Add(ProductCategory category);
+        int AddProductsCategory(ProductCategory category);
 
         /// <summary>
         /// Delete a product category.
@@ -62,7 +62,7 @@ namespace InterfaceServ
         /// <param name="category">The target product category to delete.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Delete(ProductCategory category);
+        int DeleteProductsCategory(ProductCategory category);
 
         /// <summary>
         /// Update a specific product category.
@@ -71,7 +71,7 @@ namespace InterfaceServ
         /// <param name="newProduct">The new product category to update with.</param>
         /// <returns>Zero on success, other on failure.</returns>
         [OperationContract]
-        int Update(int categoryID, ProductCategory newCategory);
+        int UpdateProductsCategory(int categoryID, ProductCategory newCategory);
 
         /// <summary>
         /// Get all products categories.

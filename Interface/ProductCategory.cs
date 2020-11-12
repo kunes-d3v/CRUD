@@ -20,7 +20,7 @@ namespace InterfaceServ
         [MaxLength(150)]
         public string description { get; set; }
 
-        [ForeignKey("products")]
-        public virtual ICollection<Product> products { get; set; }
+        //[ForeignKey("products")]
+        //public virtual ICollection<Product> products { get; set; }
     }
 }
